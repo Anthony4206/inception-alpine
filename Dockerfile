@@ -7,6 +7,6 @@ RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 	-subj "/C=FR/ST=PACA/L=Nice/O=42/OU=alevasse/CN=alevasse/"
 
 COPY default.conf /etc/nginx/conf.d/default.conf
-COPY ./inception/www /var/www/html
+COPY ./www /var/www/html
 
 CMD ["nginx", "-g", "daemon off;"]
