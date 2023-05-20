@@ -11,6 +11,6 @@ COPY ./tools/www /var/www/html
 
 RUN mkdir -p /run/nginx
 
-EXPOSE 442
+EXPOSE 443
 
 CMD ["nginx", "-g", "daemon off;"]
