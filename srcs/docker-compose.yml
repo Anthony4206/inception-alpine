@@ -21,7 +21,7 @@ services:
     build:
       context: ./requirements/wordpress
       dockerfile: Dockerfile
-    volume:
+    volumes:
       - wordpress_data:/var/www/html
     restart: always
     networks:
