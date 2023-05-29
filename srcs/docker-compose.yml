@@ -39,3 +39,10 @@ services:
     restart: always
     networks:
       - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  wordpress_data:
