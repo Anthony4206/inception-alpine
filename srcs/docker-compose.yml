@@ -32,7 +32,7 @@ services:
     build:
       context: ./requirements/mariadb
       dockerfile: Dockerfile
-    volume:
+    volumes:
       - mariadb_data:/var/lib/mysql
     env_file:
       - .env
